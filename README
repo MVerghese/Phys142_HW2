@@ -1,0 +1,40 @@
+Phys 142 HW 2 Quantum Tunneling Model
+
+
+
+Potential Function:
+
+V(x) = (1/(a^2)*(x^2) - sqrt(b)) ^ 2
+
+Gap Width - a: 1
+Barrier Height - b: 2
+
+
+Initial Wave function:
+
+Psi0 = (a/pi)^2 * e^(-a/2(x-x0)^2)
+
+a = sqrt(8)
+x0 = -1
+
+
+Environment:
+
+[-4,4] discretized over 600 steps
+
+dT = 2pi/256
+
+
+Tunneling time:
+
+305 timesteps to tunnel to the other well and back.
+
+T = 305pi/256
+
+Psi(symmetric) +- Psi (Anitsymmetric) = (1-cos(deltaE*t/hbar))/2
+
+where deltaE*t/hbar = t/T = proportion tunneled
+
+deltaE = hbar/T = hbar*256/305pi
+
+
